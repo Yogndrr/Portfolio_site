@@ -1,0 +1,58 @@
+header {
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.header__container {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.buttons {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2 rem;
+    justify-content: center;
+}
+
+.header__socials {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+.me {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.scroll__down:hover{
+    transform: rotate(0deg);
+}
